@@ -1,0 +1,11 @@
+[package]
+name = "transfer-one-sol"
+version = "0.2.0"
+authors = ["Mateo Lafalce"]
+edition = "2021"
+
+[dependencies]
+transfer_one_sol = { path = "./transfer_sol", features = ["no-entrypoint"] }
+shellexpand = "2.1.0"
+anchor-client = { version = "0.26.0", features = ["debug"] }
+anyhow = "1.0.32"
